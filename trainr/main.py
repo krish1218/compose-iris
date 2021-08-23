@@ -18,11 +18,10 @@ app.add_event_handler("startup", init_model)
 
 # class which is expected in the payload while training
 class TrainIn(BaseModel):
-    sepal_length: float
-    sepal_width: float
-    petal_length: float
-    petal_width: float
-    flower_class: str
+    subject: float
+    solutions: float
+    score: float
+    attention_class: str
 
 
 # Route definitions

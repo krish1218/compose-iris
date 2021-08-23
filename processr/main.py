@@ -13,11 +13,10 @@ app = FastAPI(title="processr", docs_url="/")
 
 # class which is expected in the payload while training
 class DataIn(BaseModel):
-    sepal_length: float
-    sepal_width: float
-    petal_length: float
-    petal_width: float
-    flower_class: str
+    subject: float
+    solutions: float
+    score: float
+    attention_class: str
 
 
 # Route definitions
